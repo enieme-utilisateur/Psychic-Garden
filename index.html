@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css"	href="/style/library.css"/>
+        
+        <title>Psychic Garden</title>
+
+    </head>
+
+<body>
+
+    <script type="script" src="./js/script.js"></script>
+
+<!--LAYERS_____________________________________-->
+
+    <div class="first-layer" >
+        <div class="img-container">
+            <img src="./assets/logos/psychic-garden-logo.svg" alt="logo" class="img-logo">
+           
+        </div>
+    </div>    
+    <div class="container-name1">
+        <p class="name">Peyote<br><span>Lophora Williamsii</span><p class="number">1</p></p>
+    </div>
+    <div class="container-name2">
+        <p class="name">Copelandia<br><span>Psilocybe Cubensis</span><p class="number">2</p></p>
+    </div>
+    <div class="container-name3">
+        <p class="name">Chacruna<br><span>Psychotria Veridis</span><p class="number">3</p></p>
+    </div>
+    
+    
+     <div class="library-btn" ><a href="library.html">Library</a></div>
+
+<!--_____________________________________-->
+
+    <div class="second-layer" aria-hidden="true" data-hero>
+        <h1>Psychic Garden</h1>
+        <img src="./assets/illus/illustration-01.svg" alt="illustration" class="illu1">
+        <img src="./assets/illus/illustration-02.svg" alt="illustration" class="illu2">
+        <img src="./assets/illus/illustration-03.svg" alt="illustration" class="illu3">
+
+        <div class="mention">
+            <p class="mention-logo">Psychic Garden</p>
+            <p class="mention-text">WWW: <span>Enieme Studio</span> </p>
+        </div>
+    </div>
+<!--FOOTBAR_____________________________________-->
+
+    <div class="footbar">
+        <p class="footbar-left">
+            Psychic Garden 
+            <span>*Online encyclopedia of sacred plants.*</span>
+        </p>
+        <p class="footbar-right">
+            Psychic Garden 
+            *<span>Online encyclopedia of sacred plants.</span>*
+        </p>
+    </div>
+
+<!--_____________________________________-->
+
+<script>
+    const hero = document.querySelector('[data-hero]')
+
+window.addEventListener('mousemove', (e) => {
+const { clientX, clientY } = e
+const x = Math.round((clientX / window.innerWidth) * 100)
+const y = Math.round((clientY / window.innerHeight) * 100)
+
+hero.style.setProperty('--x', `${x}%`)
+hero.style.setProperty('--y', `${y}%`)
+})
+
+
+</script>
+
+    
+
+<!--_____________________________________-->
+
+
+
+</body>
+
+</html>
+
+
+
+

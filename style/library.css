@@ -1,0 +1,329 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+@font-face {
+  font-family: 'monument';
+  src: url('/fonts/monument-extended-webfont.woff2') format('woff2'),
+       url('/fonts/monument-extended-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+ a {
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
+/*#bab7f5///////////////////////////////////////////////////////////////////*/
+
+.first-layer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+ 
+background: rgb(182,179,222);
+background: radial-gradient(circle, rgba(182,179,222,1) 0%, rgba(184,182,220,1) 33%, rgba(185,183,222,1) 68%, rgba(186,183,245,1) 100%);  z-index: 50;
+  overflow-x: hidden;
+  
+}
+
+.first-layer {
+  color: #d9d9d9;
+}
+
+.img-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  margin-top: -5vh;
+}
+
+.first-layer img {
+  width: 70vw;
+  position: absolute;
+  left: 50%; top: 50%; 
+  transform: translate(-50%, -50%)
+}
+
+.scroll-anim {
+  top: 0;
+  z-index: 300;
+  border: solid 1pt #d9d9d9;
+  position: absolute; 
+  position: absolute;
+  margin-top: 20vh;
+  left: 50%; top: 50%; 
+  transform: translate(-50%, -50%);
+  line-height: 0; 
+  padding-left: 10pt; padding-right: 10pt;
+  border-radius: 30pt;
+  display: flex; flex-direction: row;
+}
+
+.scroll-anim p {
+  font-size: 20pt;
+  font-family: helvetica ;
+  font-weight: medium;
+  color: #d9d9d9;
+}
+
+.scroll-anim div {
+  font-size: 20pt;
+  font-family: helvetica ;
+  font-weight: medium;
+  color: #d9d9d9;
+  line-height: 0;
+}
+
+.name {
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.name span {
+  font-style: italic;
+  font-weight: 100; 
+}
+
+.number {
+  border: 2pt solid #d9d9d9;
+  width: 40pt; height: 40pt;
+  border-radius: 100%;
+  font-size: 30pt;
+  text-align: center;
+  line-height: 1.25;
+  font-family: helvetica;
+  font-weight: bold;
+  margin-left: 10pt;
+  margin-top: 2;
+  z-index: 200;
+}
+
+.container-name1 {
+  display: flex; flex-direction: row;
+  text-align: right; 
+  width: 300pt; height: 70pt;
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  color: #d9d9d9;
+  z-index: 200;
+  animation: cont-1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity:0;
+ 
+}
+
+.container-name2 {
+  display: flex; flex-direction: row;
+  text-align: right; 
+  width: 300pt; height: 70pt;
+  position: absolute;
+  bottom: 20vh;
+  left: 10%;
+  color: #d9d9d9;
+  z-index: 200;
+  animation: cont-2;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+.container-name3 {
+  display: flex; flex-direction: row;
+  text-align: right; 
+  width: 300pt; height: 70pt;
+  position: absolute;
+  bottom: 20vh;
+  left: 70%;
+  color: #d9d9d9;
+  z-index: 200;
+  animation: cont-3;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+
+
+
+@keyframes cont-1 {
+	0% { opacity: 0;
+		 margin-left: -10%; }
+	100% { opacity:0.8;
+		  margin-left: 0%; }
+	 }
+
+   @keyframes cont-2 {
+    0% { opacity: 0;
+       margin-left: -10%; }
+    100% { opacity:0.8;
+        margin-left: 0%; }
+     }
+
+     @keyframes cont-3 {
+      0% { opacity: 0;
+         margin-left: -10%; }
+      100% { opacity:0.8;
+          margin-left: 0%; }
+       }
+
+/*///////////////////////////////////////////////////////////////////*/
+
+
+.second-layer {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #e2609f; 
+z-index: 240;
+overflow-x: hidden;
+--mask: radial-gradient(circle at var(--x, 50%) var(--y, 50%), black 100px, transparent 0);
+	-webkit-mask-image: var(--mask);
+	mask-image: var(--mask);
+}
+
+.second-layer h1 {
+  font-family: helvetica; font-weight: bold; 
+  font-size: 80pt;
+  position: absolute; 
+  left: 50%; top: 50%;
+  transform: translate( -50%, -50%);
+  line-height: 0;
+  color: #c1488e;
+  margin-top: -40pt;
+}
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.illu1 {
+  position: absolute; 
+  top: -30pt; left: 30vw;
+  width: 28%;
+}
+
+.illu2 {
+  position: absolute; 
+  bottom: 5vw; left: -50pt;
+  width: 38%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.illu3 {
+  position: absolute; 
+  bottom: 10pt; right: -100pt;
+  width: 40%;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.scroll-anim {
+  position: absolute;
+  right: ; top: ;
+  visibility: hidden;
+}
+
+.library-btn{
+  position: absolute;
+  bottom: 10vh;
+  z-index: 300;
+  left: 50%; top: 80%;
+  transform: translate(-50%,-50%);
+  transition: 1s;
+}
+.library-btn a{
+  text-align: center; 
+  color: #d9d9d9;
+  font-size: 30pt;
+  font-family: helvetica;
+  font-weight: medium;
+  border: solid 2pt #d9d9d9;
+  padding: 10pt; border-radius: 40pt;
+  transition: 1s;
+}
+
+.library-btn a:hover {
+  color: #e2609f;
+  border: solid 2pt #e2609f;
+
+  background-color: #d9d9d9;
+  transition: 1s;
+}
+
+/*//////////////////////////////////////*/
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.footbar { 
+  position: fixed;
+  height: 40pt;
+  width: 100vw;
+  bottom: 0;
+  background-color: #3c3c3b;
+  border-top: solid #e0c940 2pt;
+  z-index: 300;
+}
+
+.footbar p {
+  z-index: 111;
+  color: #d9d9d9;
+  font-family: helvetica;
+  font-style: bold;
+  font-size: 25pt;
+  margin-top: 6pt; 
+  margin-left: 7pt;
+
+}
+
+.footbar-left span {
+  font-style: italic;
+  font-weight: 100;
+  opacity: 50%;
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.mention {
+  position: absolute;
+  color: #c1488e;
+  font-family: helvetica;
+  font-weight:bold;
+  font-size: 30pt;
+  line-height: 2pt;
+  right: 20pt; top: 20pt;
+ 
+  border: solid #c1488e;
+  padding-left: 20pt; padding-right: 20pt;
+  border-radius: 20pt;
+}
+
+.mention span {
+  font-weight: 100; 
+  font-style: italic;
+}
